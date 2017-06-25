@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/master.css" />
+    <link rel="stylesheet" type="text/css" href="css/aspTable.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="top">
+                <img class="image" src="../img/school_name.png" />
+                <img class="image" src="../img/school.png" />
+                <div class="userInfo">
+                    <table id="user" class="userInfo">
+                        <tr>
+                            <td>
+                                <asp:Label ID="username" runat="server" Text="username"></asp:Label></td>
+                            <td>，欢迎您</td>
+                            <td><a href="../ErrorPage/CleanSession.aspx" class="herf">退出登录</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <ul class="bg-bubbles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+
+                </ul>
+            </div>
+            <div class="design">
+                <a href="#" class="team">
+                    <img id="design" src="../img/design.png" alt="" /></a>
+                <%-- alt很重要 --%>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="bottom">
+                中加国际中学
+                <br />
+                Copyright ©2015 - 2016 China-Canada International MiddleSchool. All Rights Reserved
+
+            </div>
+        </div>
+    </form>
+</body>
+</html>

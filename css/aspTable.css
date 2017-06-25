@@ -1,0 +1,156 @@
+﻿.aspTable {
+    font-size: 18px;
+    font-weight: 600;
+    /*line-height: 1.4em;*/
+    font-style: normal;
+    border-collapse: collapse;
+    margin: 10px auto; 
+    max-width:960px;   
+}
+.aspTableRow1 { /*表头*/
+     height:32px;
+     padding: 15px;
+     color:white;
+    text-shadow: 1px 1px 1px #37ABF5;
+    height: 20px;
+    font-weight: bolder;
+    background: #50a3a2;
+    background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+    background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+    border: 2px solid #E7EFE0;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.aspTableRow2 { /*表头之外的部分*/
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #E7EFE0;
+    height: 42px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #666;
+    text-shadow: 1px 1px 1px #fff;
+}
+/*对于排课页面右侧的显示课时数的表格的表头，高度变小*/
+.aspTableRow3 {
+     padding: 2px;
+     color:white;
+    text-shadow: 1px 1px 1px #37ABF5;
+
+    font-weight:300;
+    font-size:14px;
+    background: #50a3a2;
+    background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+    background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+    border: 2px solid #E7EFE0;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+/*对于排课页面右侧的显示课时数的表格的body，高度变小*/
+.aspTableRow4 {
+    padding: 2px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #E7EFE0;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #666;
+    font-weight:300;
+    font-size:14px;
+    text-shadow: 1px 1px 1px #fff;
+}
+.aspTableCell { border: 2px solid #E7EFE0; width: 120px; }
+.aspTableCell2 {
+    border: 2px solid #E7EFE0;
+    width:200px;
+}
+.aspTableCell3 {/*对应于审核老师的界面*/
+    border: 2px solid #E7EFE0;
+    width:75px; 
+    padding-left:0;  
+}
+/*对应于第一列区分出来的颜色*/
+.aspTableCell4 {
+    border: 2px solid #E7EFE0;
+    width:120px;
+    background-color:lightcyan;
+}
+.aspTableCellGreen { 
+    border: 2px solid #E7EFE0;
+    width:120px;
+    background-color:#d9e5ad; 
+}
+.aspTableCellBrown { 
+     border: 2px solid #E7EFE0;
+    width:120px;
+    background-color:#ddc0eb;/*紫色*/
+}
+.aspTableCellBrown2 { /*对应于审核老师的界面*/
+     border: 2px solid #E7EFE0;
+    width:75px;
+    padding-left:0px;
+    background-color:#ddc0eb;/*紫色*/
+}
+.lightGreen {/*淡绿色*/
+    background-color:#85cfac;
+}
+.lightYellow {/*淡褐色*/
+    background-color:#daba94;
+}
+.lightBlue { /*淡紫色*/
+    background-color:#b58dd5;
+}
+/*table {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse: collapse;
+    width:auto;
+    margin: 10px auto;    
+}
+table thead tr {
+     padding: 15px;
+     color:white;
+    text-shadow: 1px 1px 1px #37ABF5;
+    height: 20px;
+    font-weight: bolder;
+    background: #50a3a2;
+    background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+    background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+    border: 2px solid #E7EFE0;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+table tbody tr {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #E7EFE0;
+    height: 20px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #666;
+    text-shadow: 1px 1px 1px #fff;
+}
+table tbody td {
+    border: 2px solid #E7EFE0;
+    width:100px;
+}
+.aspTableCell2 {
+    border: 2px solid #E7EFE0;
+    width:200px;
+}*/

@@ -1,0 +1,542 @@
+﻿.* {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+body {
+    font-family: 'Microsoft YaHei', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+}
+
+.top {
+    margin: 0;
+    font-size: 20px;
+    height: 80px;
+    width: 100%;
+    background: #50a3a2;
+    background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 80%);
+    background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 80%);
+    top: 0px;
+    color: white;
+    /*高度固定，宽度扩展至整个页面*/
+}
+
+.bg-bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 80px;
+    z-index: 1;
+}
+
+    .bg-bubbles li {
+        position: absolute;
+        list-style: none;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.15);
+        bottom: -160px;
+        -webkit-animation: square 25s infinite;
+        animation: square 25s infinite;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+    }
+
+        .bg-bubbles li:nth-child(1) {
+            left: 10%;
+        }
+
+        .bg-bubbles li:nth-child(2) {
+            left: 20%;
+            width: 80px;
+            height: 80px;
+            -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+            -webkit-animation-duration: 17s;
+            animation-duration: 17s;
+        }
+
+        .bg-bubbles li:nth-child(3) {
+            left: 25%;
+            -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+        }
+
+        .bg-bubbles li:nth-child(4) {
+            left: 40%;
+            width: 60px;
+            height: 60px;
+            -webkit-animation-duration: 22s;
+            animation-duration: 22s;
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+
+        .bg-bubbles li:nth-child(5) {
+            left: 70%;
+        }
+
+        .bg-bubbles li:nth-child(6) {
+            left: 80%;
+            width: 120px;
+            height: 120px;
+            -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .bg-bubbles li:nth-child(7) {
+            left: 32%;
+            width: 160px;
+            height: 160px;
+            -webkit-animation-delay: 7s;
+            animation-delay: 7s;
+        }
+
+        .bg-bubbles li:nth-child(8) {
+            left: 55%;
+            width: 20px;
+            height: 20px;
+            -webkit-animation-delay: 15s;
+            animation-delay: 15s;
+            -webkit-animation-duration: 40s;
+            animation-duration: 40s;
+        }
+
+        .bg-bubbles li:nth-child(9) {
+            left: 25%;
+            width: 10px;
+            height: 10px;
+            -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+            -webkit-animation-duration: 40s;
+            animation-duration: 40s;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .bg-bubbles li:nth-child(10) {
+            left: 90%;
+            width: 160px;
+            height: 160px;
+            -webkit-animation-delay: 11s;
+            animation-delay: 11s;
+        }
+
+@-webkit-keyframes square {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-700px) rotate(600deg);
+        transform: translateY(-700px) rotate(600deg);
+    }
+}
+
+@keyframes square {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-700px) rotate(600deg);
+        transform: translateY(-700px) rotate(600deg);
+    }
+}
+
+.image {
+    float: left;
+    height: 79px;
+    width: auto;
+}
+
+.userInfo {
+    margin-top: 15px;
+    float: right;
+    font-weight: 300;
+}
+
+.herf {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+    .herf:hover {
+        color: #666;
+        text-decoration: none;
+        font-weight: 900;
+    }
+
+.middle {
+    min-height:2900px;
+    background-color: white;
+    margin: 20px auto;
+    width: 100%;
+    min-height: 424px;
+    color: #666;
+    text-align: center;
+    font-size: medium;
+    /*宽度固定，页面水平居中*/
+}
+
+h1 {
+    font-size: 40px;
+    margin: .67em 0;
+    font-weight: 500;
+}
+
+.nav {
+    float: left; /*固定在左侧*/
+    position: fixed; /*固定在页面的某个位置，不随页面长度改变*/
+    width: 148px;
+    margin-top: 100px;
+    color: #666;
+    display: block;
+}
+
+    .nav span {
+        color: #666;
+    }
+
+    .nav ul {
+        display: block;
+        list-style: none; /*清除li的圆点*/
+        text-align: left;
+        color: #666;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .nav li a {
+        display: block; /*此元素将显示为块级元素，此元素前后会带有换行符,所以大小固定*/
+        border-radius: 5px;
+        background-color:#9cdec1;
+        margin-bottom: 1px; /*设置块与块之间的间隔*/
+        padding-left: 4px; /*文字居左对齐*/
+        color: #666;
+        text-decoration: none; /*清除超链接的下划线*/
+        height: 35px;
+        line-height: 35px; /*设置垂直居中*/
+    }
+
+        .nav li a img {
+            height: 28px;
+            width: 28px;
+            margin: 2px;
+            vertical-align: middle;
+        }
+
+        .nav li a:hover {
+            height: 45px;
+            background: #50a3a2;
+            background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 80%);
+            background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 80%);
+            color: #fff;
+        }
+
+.right {
+    top: 30%;
+    right: 2px;
+    width: 210px;
+    position: fixed;
+    border: 4px solid #E7EFE0;
+    border-right-color: transparent;
+}
+/*排课界面右上角的显示课时*/
+/*.right2 {
+    top: 84px;
+    right: 2px;
+    width: 110px;
+    position: fixed;
+    border: 4px solid #E7EFE0;
+    border-right-color: transparent;
+}*/
+.right3 {/*对于设置课时数的页面*/
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+    padding-bottom:5px;
+    top: 284px;
+    right: 2px;
+    width: 160px;
+    position: fixed;
+    border: 4px solid #E7EFE0;
+    border-right-color: transparent;
+}
+.design {  /*右下角的作者栏C*/
+    top: 75%;
+    right:0px;
+    position:fixed;
+}
+.team { /*C*/
+background:url(../img/c.png) no-repeat;/*no-repeat非常重要，不然图片显示不出来，或只显示部分*/
+display:block;/*display要慎重*/
+}
+.team #design { /*图片*/
+    height:150px;width:100px;margin-right:5px;-webkit-margin-right:5px;
+    display:block;
+    opacity: 0; /*在开始的时候，把它隐藏起来，*/
+    transform: translate(-50px,-50px); 
+    -webkit-transform: translate(-50px,-50px); /*2图片向左向上偏移*/
+    transition: opacity ease-in-out 0.5s,transform 1s ease-in-out;
+    /* 1.transition 透明度的过渡 0.5s的延时 2.transform 图片位置改变了的过渡 */
+}
+
+.team:hover #design {
+    transform: translate(0px,0px);
+    -webkit-transform: translate(0px,0px); /*2.鼠标划过，恢复到正常的位置*/
+    opacity: 1; /*0鼠标划过，透明度变为1*/
+    transition: opacity 1s ease-in-out,transform 1s ease-in-out .1s;
+    -webkit-transition: opacity 1s ease-in-out,-webkit-transform 1s ease-in-out .1s;
+
+    /*opacity和transform时长1s,transform延时0.1s*/
+}
+
+
+table.table2 {
+    /*只有安排时间的表用了这个样式，其余皆为动态生成的表格*/
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse: collapse;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.table2 thead th {
+    text-align: center;
+    padding: 15px;
+    width: 125px;
+    color: white;
+    text-shadow: 1px 1px 1px #37ABF5;
+    height: 20px;
+    font-weight: bolder;
+    background: #50a3a2;
+    background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 80%);
+    background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 80%);
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.table2 tbody th {
+    color: #666;
+    text-shadow: 1px 1px 1px #37ABF5;
+    background-color: #53e3a6;
+    height: 20px;
+    padding: 0px 10px;
+    background: -moz-linear-gradient( left bottom, rgb(158,217,41) 2%, rgb(139,198,66) 51%, rgb(123,192,67) 87% );
+    -moz-border-radius: 5px 0px 0px 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.table2 tbody td {
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #E7EFE0;
+    height: 20px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #666;
+    text-shadow: 1px 1px 1px #fff;
+}
+.namebutton {
+    outline: none;
+    cursor: pointer;
+    font-family: 'Microsoft YaHei', sans-serif;
+    font-weight:bold;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    background-color:transparent;
+    border:none;
+    margin:0;
+    width:55px;
+    padding-left:10px;   
+}
+
+.courseButton { 
+    outline: none;
+    cursor: pointer;
+    font-family: 'Microsoft YaHei', sans-serif;
+    font-weight:bold;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    background-color:transparent;
+    /*border:solid 1px #808080;*/
+    border:none ; 
+    width:100px;
+    padding-left:30px;
+    height:30px;
+}
+.button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    padding: .5em 1em .55em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    width: 100px;
+}
+
+    .button:hover {
+        text-decoration: none;
+    }
+
+    .button:active {
+        position: relative;
+        top: 1px;
+    }
+
+.bigrounded {
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+}
+
+.small {
+    width: 85px;
+    font-size: 13px;
+    font-weight:bold;
+}
+
+.white {
+    color: #606060;
+    border: solid 1px #b7b7b7;
+    background: #50a3a2;
+    background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 80%);
+    background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 80%);
+}
+
+    .white:hover {
+        background: #ededed;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
+        background: -moz-linear-gradient(top, #fff, #dcdcdc);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
+    }
+
+    .white:active {
+        color: #999;
+        background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#fff));
+        background: -moz-linear-gradient(top, #ededed, #fff);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff');
+    }
+
+table.table3 {
+    /*针对下拉框而产生的table的格式，但却是动态变化了长度*/
+    margin: 0 auto;
+    vertical-align: middle;
+    width: 150px;
+}
+
+select {
+    /*下拉框的样式，对html和ASP都适用*/
+    font-size: 15px;
+    font-weight:bold;
+    color :#666;
+    border: solid 1px #808080;
+    border-radius: 5px;
+    margin: 5px;
+    height: 25px;
+    width: 90px;
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-right: 2px;
+    background: url("../img/arrow.png") no-repeat scroll right center transparent;
+    text-align: center;
+}
+
+.wider {
+    width: 150px;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select option {
+    background-color: white;
+    border-radius: 2px;
+    border: 0.5px solid #E7EFE0;
+    text-align: center;
+    font-weight:bold;
+}
+
+    select option:checked {
+        background: #cceee0;
+    }
+    select option:hover {
+        background: #E7EFE0;
+    }
+	-webkit-select option:hover {
+        background: #E7EFE0;
+    }
+
+.labelGreen { 
+    color:transparent;
+    background-color:#d9e5ad;
+}
+.labelPurple { 
+    color:transparent;
+    background-color:#ddc0eb;
+}
+.textbox {
+    border: solid 1px #808080;
+    border-radius: 5px;
+    width: 90px;
+    height: 25px;
+    margin: 5px;
+    font-size: 15px;
+    padding-left: 2px;
+}
+
+.bottom {
+    height: 40px;
+    background: #50a3a2;
+    background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 80%);
+    background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 80%);
+    padding: 0px;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.opacity0 {
+    opacity: 0;
+}
+
+.opacity1 {
+    opacity: 1;
+}
